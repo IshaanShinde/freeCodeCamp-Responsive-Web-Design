@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width", initial-scale="1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Product Survey</title>        
+    </head>
+
+    <body>
+        <div class="container">
+            
+            <header class="header">
+                <h1 id="title" class="align-center">Product Survey</h1>
+                <p id="description" class="header-description">We appreciate your effort in aiding us to enhance our products.</p>
+            </header>
+
+            <form id="survey-form">
+                <!--NAME-->
+                <div class="form-element">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        class="form-element-style"
+                        id="name"
+                        type="text"
+                        name="name"
+                        placeholder="Enter Your Name"
+                        required
+                    />
+                </div>
+
+                <!--EMAIL-->
+                <div class="form-element">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        class="form-element-style"
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        required
+                    />
+                </div>
+
+                <!--NUMBER-->
+                <div class="form-element">
+                    <label id="number-label" for="number">Model Number<span class="clue">(optional)</span></label>
+                    <input
+                        class="form-element-style"
+                        id="number"
+                        type="number"
+                        name="number"
+                        min="0"
+                        max="99"
+                        placeholder="0->99"
+                    />
+                </div>
+
+                <!--SELECT DROPDOWN MENU-->
+                <div class="form-element">
+                    <p>Select the Top Finish Your Guitar Has</p>
+                    <select id="dropdown" name="guitar-top" class="form-element-style" required>
+                        <option disabled selected value>Select Top Finish</option>
+                        <option value="maple">Maple</option>
+                        <option value="quilted-maple">Quilted Maple</option>
+                        <option value="flamed-maple">Flamed Maple</option>
+                        <option value="buckeye-burl">Buckeye Burl</option>
+                        <option value="flame-ash">Flame Ash</option>
+                    </select> 
+                </div>
+
+                <!--RADIO BUTTON MENU-->
+                <div>
+                    <p>Select the Pickup Set Installed</p>
+                    <label>
+                        <input
+                            name="pickup"
+                            value="dimarzio"
+                            type="radio"
+                            class="form-radio-element"
+                            checked
+                        />DiMarzio</label>
+                    
+                    <label>
+                        <input
+                            name="pickup"
+                            value="seymour-duncan"
+                            type="radio"
+                            class="form-radio-element"
+                            checked
+                        />Seymour Duncan</label>
+
+                    <label>
+                        <input
+                            name="pickup"
+                            value="fishman"
+                            type="radio"
+                            class="form-radio-element"
+                            checked
+                        />Fishman</label>
+                    
+                    <label>
+                        <input
+                            name="pickup"
+                            value="not-sure"
+                            type="radio"
+                            class="form-radio-element"
+                            checked
+                        />Not Sure</label>
+                </div>
+
+                <!--CHECKBOXES-->
+                <div class="form-element">
+                    <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+
+                    <label>
+                        <input
+                        name="prefer"
+                        value="hardware"
+                        type="checkbox"
+                        class="form-checkbox-element"
+                        />Hardware</label>
+                    </label>
+
+                    <label>
+                        <input
+                        name="prefer"
+                        value="woods"
+                        type="checkbox"
+                        class="form-checkbox-element"
+                        />Woods</label>
+                    </label>
+
+                    <label>
+                        <input
+                        name="prefer"
+                        value="finishes"
+                        type="checkbox"
+                        class="form-checkbox-element"
+                        />Finishes</label>
+                    </label>
+
+                    <label>
+                        <input
+                        name="prefer"
+                        value="pickups"
+                        type="checkbox"
+                        class="form-checkbox-element"
+                        />Pickups</label>
+                    </label>
+
+                    <label>
+                        <input
+                        name="prefer"
+                        value="Outputs"
+                        type="checkbox"
+                        class="form-checkbox-element"
+                        />Outputs</label>
+                    </label>
+                </div>
+
+                <!--TEXTAREA-->
+                <div class="form-element">
+                    <p>Comments and Suggestions</p>
+                    <textarea
+                        id="comments-and-suggestions"
+                        class="form-textarea-element"
+                        name="comments-and-suggestions"
+                        placeholder="Type out your comments and suggestions here">
+                    </textarea>
+                </div>
+
+                <!--SUBMIT BUTTON-->
+                <div class="form-element">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+
+                <div class="form-element">
+                    <p style="font-size: 0.5rem;">Background by Gwen King on Unsplash</p>
+                </div>
+
+            </form>   
+
+        </div>
+    </body>
+
+</html>

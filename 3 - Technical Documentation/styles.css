@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica:200i,400&display=swap');
+
+body {
+    min-width: 200px;
+    color: darkgray;
+    background-color: black;
+    font-size: 1rem;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    line-height: 1.4rem;
+
+}
+
+header {
+    color: lightseagreen;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0px;
+    margin-top: 1.2rem;
+}
+
+code{
+    display: block;
+    text-align: left;
+    position: relative;
+    word-wrap: normal;
+    word-break: normal;
+    word-spacing: normal;
+    line-height: 1.5rem;
+    background-color: rgba(177, 225, 255, 0.18);
+
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 200px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}
+
+#navbar {
+    position: fixed;
+    width: 100px;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-color: lightskyblue;
+    border-right: solid;
+}
+
+#navbar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    height: 60%;
+}
+
+#navbar li {
+    /* to remove bullet points */
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    border-color: white;
+
+}
+
+#navblock a {
+    display: block;
+    padding: 0.4rem 0.4rem;
+    /* to remove underlines from anchor elements */
+    text-decoration: none;
+    /* to change cursor into pointer while hovering */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    #navbar ul {
+        border: solid;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid;
+        z-index: 1;
+        max-height: 200px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 200px;
+
+    }
+}

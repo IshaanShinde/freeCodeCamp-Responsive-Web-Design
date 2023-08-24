@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>ProductLandingPage</title>
+    </head>
+
+    <body>
+        <div id="page-wrapper">
+            <header id="header">
+                <div class="logo">
+                    <img 
+                        id="header-img"
+                        src="https://www.ibanez.com/images/logo.png"
+                        alt="top left logo"
+                    />
+                </div>
+
+                <nav id="nav-bar">
+                    <ul>
+                      <li><a class="nav-link" href="#features">Features</a></li>
+                      <li><a class="nav-link" href="#vid">Video</a></li>
+                      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container"></div>
+
+            <section id="topic">
+                <h2>Ibanez AZ427P1PB</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input
+                        name="email"
+                        id="email"
+                        type="email"
+                        placeholder="Enter your eMail address"
+                        required
+                        style="text-align: center; padding: 0.5rem; width: 100%; box-sizing: border-box;"
+                    />
+
+                    <input id="submit" type="submit" value="Submit" class="button"/>
+
+                </form>
+            </section>
+
+            <!-- features -->
+            <div class="container">
+                <section id="features">
+                    <div class="grid">
+                        <div class="icon"><i class=""></i></div>
+                        <div class="desc">
+                            <h2>Gotoh® MG-T locking machine heads</h2>
+                            <p>The Gotoh® MG-T locking machine heads achieve incredible tuning stability, cutting down string-changing time.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="icon"><i class=""></i></div>
+                        <div class="desc">
+                            <h2>dyna-MIX10 switching system with Alter Switch</h2>
+                            <p>The dyna-MIX 10 offers ten sound variations and can easily switch from humbucker and single coil modes with the mini switch. The power Tap mode provides a realistic single coil sound despite its two humbucker pickup layout.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="icon"><i class=""></i></div>
+                        <div class="desc">
+                            <h2>Seymour Duncan® Hyperion™ Pickups</h2>
+                            <p>Seymour Duncan® Hyperion™ Pickups feature a moderate output through Alnico-5 magnets to keep the clarity of the fundamental tone when using a distortion sound, and to deliver a clear pick attack. From treble to bass, the overall tonal balance is evenly adjusted., and works well with various effect pedals.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- video -->
+                <section id="vid">
+                    <iframe
+                        id="video"
+                        height="400"
+                        src="https://www.youtube.com/embed/8-mHqFXx_h4"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </section>
+
+                <section id="pricing">
+                    <div class="product" id="sweetwater">
+                        <div class="level">Sweetwater</div>
+                        <h2>699$</h2>
+
+                        <ol>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ol>
+                        <button class="button">Select</button> 
+                    </div>
+
+                    <div class="product" id="thoman">
+                        <div class="level">Thoman</div>
+                        <h2>699$</h2>
+
+                        <ol>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ol>
+                        <button class="button">Select</button> 
+                    </div>
+
+                    <div class="product" id="other">
+                        <div class="level">Other</div>
+                        <h2>699$</h2>
+
+                        <ol>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ol>
+                        <button class="button">Select</button> 
+                    </div>
+                </section>
+
+                <footer>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">T&C</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <span>7 strings are just better</span>
+                </footer>
+            </div>
+
+        </div>
+
+    </body>
+</html>

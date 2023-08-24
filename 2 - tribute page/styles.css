@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica:200i,400&display=swap');
+
+
+@media(max-width: 800px) {
+    h1{
+        font-family: Helvetica, 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+body{
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.4rem;
+    text-align: center;
+    margin: 1rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1rem;
+}
+a {
+  color: #008cff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+  
+#img-div {
+    background: black;
+    padding: 0.4rem;
+    margin: 0;
+}
+  
+@media (max-width: 400px) {
+    #img-caption {
+      font-size: 1.4rem;
+    }
+}
+
+ul {
+  max-width: 800px;
+  margin: 0 auto 0.4rem auto;
+  text-align: left;
+  line-height: 1.4rem;
+}
+
+li {
+  margin-bottom: 1.4rem;
+}
